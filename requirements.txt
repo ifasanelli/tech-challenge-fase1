@@ -1,0 +1,14 @@
+black
+flake8
+mkdocs
+pip
+python-dotenv
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+scipy
+joblib
+jupyter
+-e .
