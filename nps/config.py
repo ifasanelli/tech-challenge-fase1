@@ -20,7 +20,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Raiz do projeto: dois níveis acima deste arquivo
-# (tech_challenge_fase1/config.py -> tech_challenge_fase1/ -> raiz do projeto).
+# (nps/config.py -> nps/ -> raiz do projeto).
 PROJ_ROOT = Path(__file__).resolve().parents[1]
 
 # --------------------------------------------------------------------------- #

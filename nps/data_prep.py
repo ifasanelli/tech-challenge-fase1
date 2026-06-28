@@ -16,7 +16,7 @@ from typing import Dict
 import numpy as np
 import pandas as pd
 
-from tech_challenge_fase1.config import PROCESSED_DATA_FILE, RAW_DATA_FILE
+from nps.config import PROCESSED_DATA_FILE, RAW_DATA_FILE
 
 # --------------------------------------------------------------------------- #
 # Grupos de colunas (fonte única da verdade, reutilizada pelo módulo de modelagem)

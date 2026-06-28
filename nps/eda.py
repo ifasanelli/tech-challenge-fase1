@@ -17,8 +17,8 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
-from tech_challenge_fase1.config import FIGURES_DIR, PROCESSED_DATA_FILE
-from tech_challenge_fase1.data_prep import NUMERIC_FEATURES, TARGET
+from nps.config import FIGURES_DIR, PROCESSED_DATA_FILE
+from nps.data_prep import NUMERIC_FEATURES, TARGET
 
 # Diretório padrão das figuras (definido no config central do projeto).
 DEFAULT_FIGURES_DIR = str(FIGURES_DIR)

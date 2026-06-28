@@ -30,15 +30,15 @@ clean:
 ## Lint using flake8, black, and isort (use `make format` to do formatting)
 .PHONY: lint
 lint:
-	flake8 tech_challenge_fase1
-	isort --check --diff tech_challenge_fase1
-	black --check tech_challenge_fase1
+	flake8 nps
+	isort --check --diff nps
+	black --check nps
 
 ## Format source code with black
 .PHONY: format
 format:
-	isort tech_challenge_fase1
-	black tech_challenge_fase1
+	isort nps
+	black nps
 
 ## Set up Python interpreter environment
 .PHONY: create_environment
@@ -55,12 +55,17 @@ create_environment:
 ## Make dataset
 .PHONY: data
 data: requirements
-	$(PYTHON_INTERPRETER) tech_challenge_fase1/data_prep.py
+	$(PYTHON_INTERPRETER) nps/data_prep.py
 
 ## Generate EDA figures
 .PHONY: figures
 figures: data
-	$(PYTHON_INTERPRETER) tech_challenge_fase1/eda.py
+	$(PYTHON_INTERPRETER) nps/eda.py
+
+## Train models and generate evaluation figures
+.PHONY: train
+train: data
+	$(PYTHON_INTERPRETER) nps/model.py
 
 
 #################################################################################

@@ -3,7 +3,7 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "tech_challenge_fase1"
+name = "nps"
 version = "0.0.1"
 description = "A short description of the project."
 authors = [
@@ -29,7 +29,7 @@ exclude = '''
 
 [tool.isort]
 profile = "black"
-known_first_party = ["tech_challenge_fase1"]
+known_first_party = ["nps"]
 force_sort_within_sections = true
 
 

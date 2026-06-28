@@ -1,0 +1,85 @@
+{
+  "best_regression": "LinearRegression",
+  "best_classification": "LogisticRegression",
+  "regression": {
+    "LinearRegression": {
+      "rmse": 1.69,
+      "mae": 1.335,
+      "r2": 0.548,
+      "cv_r2_mean": 0.554,
+      "cv_r2_std": 0.04
+    },
+    "RandomForestRegressor": {
+      "rmse": 1.736,
+      "mae": 1.386,
+      "r2": 0.523,
+      "cv_r2_mean": 0.526,
+      "cv_r2_std": 0.037
+    }
+  },
+  "classification": {
+    "LogisticRegression": {
+      "accuracy": 0.858,
+      "precision": 0.886,
+      "recall": 0.955,
+      "f1": 0.919,
+      "roc_auc": 0.868,
+      "cv_auc_mean": 0.896,
+      "cv_auc_std": 0.011
+    },
+    "RandomForestClassifier": {
+      "accuracy": 0.866,
+      "precision": 0.877,
+      "recall": 0.979,
+      "f1": 0.925,
+      "roc_auc": 0.867,
+      "cv_auc_mean": 0.874,
+      "cv_auc_std": 0.028
+    }
+  },
+  "linear_coefficients": {
+    "delivery_delay_days": -1.3597,
+    "complaints_count": -0.6766,
+    "resolution_time_days": -0.5134,
+    "customer_service_contacts": -0.4178,
+    "customer_region_Centro-Oeste": -0.1296,
+    "freight_value": -0.1051,
+    "customer_tenure_months": -0.0564,
+    "discount_value": -0.0442,
+    "customer_region_Nordeste": -0.0097,
+    "customer_region_Sudeste": 0.001,
+    "customer_age": 0.007,
+    "items_quantity": 0.0177,
+    "delivery_time_days": 0.0297,
+    "payment_installments": 0.0381,
+    "customer_region_Norte": 0.0414,
+    "delivery_attempts": 0.0951,
+    "customer_region_Sul": 0.0969,
+    "order_value": 0.1184
+  },
+  "rf_importance": {
+    "complaints_count": 0.1685,
+    "delivery_delay_days": 0.1375,
+    "order_value": 0.0823,
+    "freight_value": 0.076,
+    "discount_value": 0.0754,
+    "customer_age": 0.0711,
+    "customer_tenure_months": 0.0699,
+    "resolution_time_days": 0.0697,
+    "delivery_time_days": 0.0504,
+    "payment_installments": 0.0475,
+    "customer_service_contacts": 0.0451,
+    "items_quantity": 0.0356,
+    "delivery_attempts": 0.0223,
+    "customer_region_Sul": 0.0105,
+    "customer_region_Norte": 0.01,
+    "customer_region_Sudeste": 0.0098,
+    "customer_region_Nordeste": 0.0096,
+    "customer_region_Centro-Oeste": 0.009
+  },
+  "n_features": 14,
+  "excluded_leakage": [
+    "repeat_purchase_30d",
+    "csat_internal_score"
+  ]
+}

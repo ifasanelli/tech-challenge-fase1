@@ -27,7 +27,7 @@ A short description of the project.
 │                         `1.0-jqp-initial-data-exploration`.
 │
 ├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         tech_challenge_fase1 and configuration for tools like black
+│                         nps and configuration for tools like black
 │
 ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
 │
@@ -39,22 +39,17 @@ A short description of the project.
 │
 ├── setup.cfg          <- Configuration file for flake8
 │
-└── tech_challenge_fase1   <- Source code for use in this project.
+└── nps                <- Source code for use in this project.
     │
-    ├── __init__.py             <- Makes tech_challenge_fase1 a Python module
+    ├── __init__.py             <- Makes nps a Python module
     │
-    ├── config.py               <- Store useful variables and configuration
+    ├── config.py               <- Caminhos centralizados do projeto (lê o .env)
     │
-    ├── dataset.py              <- Scripts to download or generate data
+    ├── data_prep.py            <- Carga, validação e limpeza dos dados (gera o dataset processado)
     │
-    ├── features.py             <- Code to create features for modeling
+    ├── eda.py                  <- Funções de análise exploratória e geração das figuras
     │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
-    │
-    └── plots.py                <- Code to create visualizations
+    └── model.py                <- Pipeline de modelagem: treino, avaliação e persistência
 ```
 
 --------
