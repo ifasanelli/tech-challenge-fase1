@@ -57,6 +57,11 @@ create_environment:
 data: requirements
 	$(PYTHON_INTERPRETER) tech_challenge_fase1/data_prep.py
 
+## Generate EDA figures
+.PHONY: figures
+figures: data
+	$(PYTHON_INTERPRETER) tech_challenge_fase1/eda.py
+
 
 #################################################################################
 # Self Documenting Commands                                                     #
