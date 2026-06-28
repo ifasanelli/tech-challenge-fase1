@@ -40,16 +40,11 @@ format:
 	isort tech_challenge_fase1
 	black tech_challenge_fase1
 
-
-
-
-
 ## Set up Python interpreter environment
 .PHONY: create_environment
 create_environment:
 	@bash -c "if [ ! -z `which virtualenvwrapper.sh` ]; then source `which virtualenvwrapper.sh`; mkvirtualenv $(PROJECT_NAME) --python=$(PYTHON_INTERPRETER); else mkvirtualenv.bat $(PROJECT_NAME) --python=$(PYTHON_INTERPRETER); fi"
 	@echo ">>> New virtualenv created. Activate with:\nworkon $(PROJECT_NAME)"
-	
 
 
 
@@ -57,6 +52,10 @@ create_environment:
 # PROJECT RULES                                                                 #
 #################################################################################
 
+## Make dataset
+.PHONY: data
+data: requirements
+	$(PYTHON_INTERPRETER) tech_challenge_fase1/data_prep.py
 
 
 #################################################################################
